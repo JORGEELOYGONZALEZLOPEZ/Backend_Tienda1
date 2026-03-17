@@ -25,8 +25,8 @@ module.exports = {
         type: Sequelize.STRING(255)
       },
       rol:{
-      type: DataTypes.ENUM('admin', 'cliente'),
-      allowNUll:false,
+      type: Sequelize.ENUM('admin', 'cliente'),
+      allowNUll: false,
       defaultValue: 'cliente'
       },
       fecha_registro: {

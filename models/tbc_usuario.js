@@ -16,27 +16,27 @@ module.exports = (sequelize, DataTypes) => {
   tbc_Usuario.init({
     nombre: {
       type:DataTypes.STRING(100),
-      allowNull:false
+      allowNull: false
     },
     direccion: {
       type:DataTypes.STRING(100),
-      allowNull:false
+      allowNull: false
     },
     telefono: {
       type: DataTypes.STRING(150),
-      allowNull:false
+      allowNull: false
     },
     email: {
       type: DataTypes.STRING(15),
-      allowNull:false
+      allowNull: false
     },
     password: {
       type: DataTypes.STRING(120),
-      allowNull:false
+      allowNull: false
     },
     rol:{
       type: DataTypes.ENUM('admin', 'cliente'),
-      allowNUll:false,
+      allowNUll: false,
       defaultValue: 'cliente'
     },
     fecha_registro: DataTypes.DATE
