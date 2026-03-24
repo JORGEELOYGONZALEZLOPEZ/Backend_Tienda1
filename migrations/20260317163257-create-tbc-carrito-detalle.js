@@ -10,10 +10,18 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       id_carrito: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'tbc_carritos',
+          key: 'id'
+        }
       },
       id_producto: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'tbc_productos',
+          key: 'id'
+        }
       },
       cantidad: {
         type: Sequelize.INTEGER
